@@ -72,7 +72,7 @@ export default function Navbar() {
               ))}
             </ul>
 
-            <a href="mailto:info@loonovaai.com" className="navbar-cta">
+            <a href="#contact" onClick={(e) => scrollTo(e, '#contact')} className="navbar-cta">
               Book a Strategy Call
             </a>
 
@@ -94,7 +94,7 @@ export default function Navbar() {
         {NAV_LINKS.map(([href, label]) => (
           <a key={href} href={href} onClick={(e) => scrollTo(e, href)}>{label}</a>
         ))}
-        <a href="mailto:info@loonovaai.com" className="btn-primary">
+        <a href="#contact" onClick={(e) => scrollTo(e, '#contact')} className="btn-primary">
           Book a Strategy Call
         </a>
       </div>

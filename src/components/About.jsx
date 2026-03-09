@@ -1,4 +1,13 @@
 ﻿export default function About() {
+  const scrollToContact = (e) => {
+    e.preventDefault()
+    const target = document.querySelector('#contact')
+    if (!target) return
+    const navH = document.querySelector('.navbar')?.offsetHeight ?? 76
+    const top = target.getBoundingClientRect().top + window.scrollY - navH
+    window.scrollTo({ top, behavior: 'smooth' })
+  }
+
   return (
     <section id="about" className="about">
       <div className="container">
@@ -32,7 +41,7 @@
               year trying to catch up. I can help you implement this the right way.
             </p>
             <div className="about-actions">
-              <a href="mailto:info@loonovaai.com" className="btn-primary">
+              <a href="#contact" onClick={scrollToContact} className="btn-primary">
                 Get in Touch
               </a>
             </div>

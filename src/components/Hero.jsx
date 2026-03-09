@@ -1,4 +1,13 @@
 ﻿export default function Hero() {
+  const scrollTo = (e, href) => {
+    e.preventDefault()
+    const target = document.querySelector(href)
+    if (!target) return
+    const navH = document.querySelector('.navbar')?.offsetHeight ?? 76
+    const top = target.getBoundingClientRect().top + window.scrollY - navH
+    window.scrollTo({ top, behavior: 'smooth' })
+  }
+
   return (
     <section id="hero" className="hero">
       <img src="/logo.png" className="hero-loon-watermark" aria-hidden="true" alt="" />
@@ -27,21 +36,10 @@
           </p>
 
           <div className="hero-actions fade-in delay-4">
-            <a href="mailto:info@loonovaai.com" className="btn-primary">
+            <a href="#contact" onClick={(e) => scrollTo(e, '#contact')} className="btn-primary">
               Book a Strategy Call
             </a>
-            <a
-              href="#services"
-              className="btn-secondary"
-              onClick={(e) => {
-                e.preventDefault()
-                const target = document.querySelector('#services')
-                if (!target) return
-                const navH = document.querySelector('.navbar')?.offsetHeight ?? 76
-                const top = target.getBoundingClientRect().top + window.scrollY - navH
-                window.scrollTo({ top, behavior: 'smooth' })
-              }}
-            >
+            <a href="#services" className="btn-secondary" onClick={(e) => scrollTo(e, '#services')}>
               See What We Build
             </a>
           </div>
