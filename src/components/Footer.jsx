@@ -8,6 +8,7 @@ const FOOTER_LINKS = {
     ['#services', 'Client Onboarding'],
   ],
   Company: [
+    ['/systems', 'Systems in Practice'],
     ['#why', 'Why Loonova'],
     ['#process', 'Our Process'],
     ['#industries', 'Industries'],
@@ -16,6 +17,14 @@ const FOOTER_LINKS = {
 }
 
 function scrollTo(e, href) {
+  if (!href.startsWith('#')) return
+
+  if (window.location.pathname !== '/' && window.location.pathname !== '/index.html') {
+    e.preventDefault()
+    window.location.href = `/${href}`
+    return
+  }
+
   e.preventDefault()
   const target = document.querySelector(href)
   if (!target) return

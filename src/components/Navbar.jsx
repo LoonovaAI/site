@@ -2,6 +2,7 @@
 
 const NAV_LINKS = [
   ['#services', 'Services'],
+  ['/systems', 'Systems'],
   ['#process', 'Process'],
   ['#industries', 'Industries'],
   ['#contact', 'Contact'],
@@ -46,6 +47,18 @@ export default function Navbar() {
   }, [mobileOpen])
 
   const scrollTo = (e, href) => {
+    if (!href.startsWith('#')) {
+      setMobileOpen(false)
+      return
+    }
+
+    if (window.location.pathname !== '/' && window.location.pathname !== '/index.html') {
+      e.preventDefault()
+      setMobileOpen(false)
+      window.location.href = `/${href}`
+      return
+    }
+
     e.preventDefault()
     setMobileOpen(false)
     const target = document.querySelector(href)
