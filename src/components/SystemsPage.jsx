@@ -1,3 +1,5 @@
+import { useEffect, useState } from 'react'
+
 const SYSTEMS = [
   {
     title: 'AI Email Labeling and Routing',
@@ -49,47 +51,93 @@ const SYSTEMS = [
 ]
 
 export default function SystemsPage() {
-  return (
-    <main className="systems-page" id="systems">
-      <section className="systems-hero">
-        <div className="container">
-          <div className="systems-hero-inner fade-in">
-            <span className="section-label">Systems</span>
-            <h1 className="section-title">Systems in Practice</h1>
-            <p className="section-subtitle">
-              The systems below are demonstration implementations designed to
-              illustrate how AI, automation, and internal tools can be integrated
-              into real business workflows. In practice these systems are typically
-              expanded and customized to match a company&apos;s processes and software
-              stack.
-            </p>
-          </div>
-        </div>
-      </section>
+  const [activeImage, setActiveImage] = useState(null)
 
-      <section className="systems-list">
-        <div className="container">
-          {SYSTEMS.map((system, i) => (
-            <article key={system.title} className={`system-card glass-card fade-in delay-${(i % 2) + 1}`}>
-              <div className="system-card-body">
-                <h2>{system.title}</h2>
-                <p>{system.description}</p>
-                <p className="system-why">
-                  <strong>Why it matters:</strong> {system.why}
-                </p>
-                <p className="system-fit">
-                  <strong>Where this fits in a broader system:</strong> {system.systemFit}
-                </p>
-              </div>
-              <div className="system-images">
-                {system.images.map((image) => (
-                  <img key={image} src={image} alt={`${system.title} example`} />
-                ))}
-              </div>
-            </article>
-          ))}
+  useEffect(() => {
+    if (!activeImage) return
+    const onKeyDown = (e) => {
+      if (e.key === 'Escape') setActiveImage(null)
+    }
+    window.addEventListener('keydown', onKeyDown)
+    return () => window.removeEventListener('keydown', onKeyDown)
+  }, [activeImage])
+
+  return (
+    <>
+      <main className="systems-page" id="systems">
+        <section className="systems-hero">
+          <div className="container">
+            <div className="systems-hero-inner fade-in">
+              <span className="section-label">Systems</span>
+              <h1 className="section-title">Systems in Practice</h1>
+              <p className="section-subtitle">
+                The systems below are demonstration implementations designed to
+                illustrate how AI, automation, and internal tools can be integrated
+                into real business workflows. In practice these systems are typically
+                expanded and customized to match a company&apos;s processes and software
+                stack.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section className="systems-list">
+          <div className="container">
+            {SYSTEMS.map((system, i) => (
+              <article key={system.title} className={`system-card glass-card fade-in delay-${(i % 2) + 1}`}>
+                <div className="system-card-body">
+                  <h2>{system.title}</h2>
+                  <p>{system.description}</p>
+                  <p className="system-why">
+                    <strong>Why it matters:</strong> {system.why}
+                  </p>
+                  <p className="system-fit">
+                    <strong>Where this fits in a broader system:</strong> {system.systemFit}
+                  </p>
+                </div>
+                <div className="system-images">
+                  {system.images.map((image) => (
+                    <button
+                      key={image}
+                      type="button"
+                      className="system-image-btn"
+                      onClick={() => setActiveImage({ src: image, alt: `${system.title} example` })}
+                      aria-label={`Open ${system.title} image`}
+                    >
+                      <img src={image} alt={`${system.title} example`} />
+                    </button>
+                  ))}
+                </div>
+              </article>
+            ))}
+          </div>
+        </section>
+      </main>
+
+      {activeImage && (
+        <div
+          className="image-lightbox"
+          role="dialog"
+          aria-modal="true"
+          aria-label="Expanded system screenshot"
+          onClick={() => setActiveImage(null)}
+        >
+          <button
+            type="button"
+            className="lightbox-close"
+            onClick={() => setActiveImage(null)}
+            aria-label="Close expanded image"
+          >
+            Close
+          </button>
+          <img
+            src={activeImage.src}
+            alt={activeImage.alt}
+            className="lightbox-image"
+            onClick={(e) => e.stopPropagation()}
+          />
         </div>
-      </section>
-    </main>
+      )}
+    </>
   )
 }

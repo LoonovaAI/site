@@ -341,9 +341,15 @@ a { color: inherit; text-decoration: none; }
 .system-fit strong { color: var(--text-primary); }
 .system-images {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: 12px;
-  max-width: 920px;
+}
+.system-image-btn {
+  display: block;
+  border: 0;
+  padding: 0;
+  background: none;
+  cursor: zoom-in;
 }
 .system-images img {
   width: 100%;
@@ -355,6 +361,35 @@ a { color: inherit; text-decoration: none; }
   object-position: center;
   padding: 8px;
   background: rgba(15, 23, 42, 0.78);
+}
+.image-lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(2, 6, 23, 0.9);
+  display: grid;
+  place-items: center;
+  padding: clamp(14px, 3vw, 28px);
+  z-index: 1200;
+}
+.lightbox-image {
+  max-width: min(1200px, 94vw);
+  max-height: 88vh;
+  width: auto;
+  height: auto;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: rgba(2, 6, 23, 0.75);
+}
+.lightbox-close {
+  position: absolute;
+  top: clamp(14px, 3vw, 22px);
+  right: clamp(14px, 3vw, 22px);
+  border: 1px solid var(--border);
+  background: rgba(15, 23, 42, 0.9);
+  color: var(--text-primary);
+  border-radius: 10px;
+  padding: 10px 14px;
+  cursor: pointer;
 }
 
 .footer { padding: 58px 0 26px; border-top: 1px solid rgba(148, 163, 184, 0.15); }
