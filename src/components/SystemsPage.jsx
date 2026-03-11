@@ -46,6 +46,7 @@ const SYSTEMS = [
       'This is the data hygiene layer in a larger growth or operations system. Clean, deduplicated lead data then feeds outreach, CRM updates, reporting, and follow-up automations with far fewer errors.',
     images: [
       '/images/systems/leads-folder-workflow.png',
+      '/images/systems/fake-script-output.svg',
     ],
   },
 ]
