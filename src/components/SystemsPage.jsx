@@ -40,7 +40,7 @@ const SYSTEMS = [
   {
     title: 'Lead Folder to Deduplicated Master CSV',
     description:
-      'Shows a no-code workflow where Claude cowork is pointed to a leads folder containing raw CSV files and a master CSV, then used to generate a Python merge script that combines sources into one deduplicated dataset.',
+      'Shows a lightweight workflow where Claude is pointed to a leads folder containing raw CSV files and a master CSV, then used to generate a Python merge script that combines sources into one deduplicated dataset.',
     why: 'This turns manual spreadsheet cleanup into a repeatable system. Each run merges newly added lead files, removes duplicates, and appends a run-specific added date identifier so new records are traceable over time.',
     systemFit:
       'This is the data hygiene layer in a larger growth or operations system. Clean, deduplicated lead data then feeds outreach, CRM updates, reporting, and follow-up automations with far fewer errors.',
@@ -72,11 +72,9 @@ export default function SystemsPage() {
               <span className="section-label">Systems</span>
               <h1 className="section-title">Systems in Practice</h1>
               <p className="section-subtitle">
-                The systems below are demonstration implementations designed to
-                illustrate how AI, automation, and internal tools can be integrated
-                into real business workflows. In practice these systems are typically
-                expanded and customized to match a company&apos;s processes and software
-                stack.
+                These are demo implementations that show how AI, automation, and
+                internal tools fit into real business workflows. In client work, each
+                one is expanded and adapted to match your exact process and software stack.
               </p>
             </div>
           </div>

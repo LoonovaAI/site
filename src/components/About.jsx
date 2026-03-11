@@ -38,7 +38,8 @@
               Software subscriptions keep getting more expensive, but AI tools have
               become far more capable and affordable. Right now, firms that set this up
               correctly can pull ahead fast. The ones that wait usually spend the next
-              year trying to catch up. I can help you implement this the right way.
+              year trying to catch up. The point is to automate repetitive execution so
+              your team can reallocate time to higher-ROI activities AI cannot replace.
             </p>
             <div className="about-actions">
               <a href="#contact" onClick={scrollToContact} className="btn-primary">

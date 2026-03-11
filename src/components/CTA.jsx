@@ -64,7 +64,8 @@ export default function CTA() {
             <p className="section-subtitle">
               This is moving quickly. The firms putting the right systems in place now
               are building an edge that gets harder to close later. If you want to see
-              whether your business is a good fit, let&apos;s talk.
+              whether your business is a good fit and where your team should reallocate
+              time to higher-ROI work AI cannot replace, let&apos;s talk.
             </p>
           </div>
 

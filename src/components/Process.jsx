@@ -3,19 +3,19 @@
     number: '01',
     title: 'Assess Bottlenecks',
     description:
-      'We start with structured discovery to identify where the business is losing time, responsiveness, or visibility before any solution is designed.',
+      'We start by finding where your team is losing time, dropping responsiveness, or missing visibility before we design anything.',
   },
   {
     number: '02',
     title: 'Design the System',
     description:
-      'We build around your full workflow, not isolated tasks. AI, automation, and integration are mapped to specific business outcomes.',
+      'We design around your full workflow, not isolated tasks. AI, automations, and integrations are mapped to specific business outcomes.',
   },
   {
     number: '03',
     title: 'Launch and Refine',
     description:
-      'We deploy for real adoption, then refine based on performance data so the system improves over time and delivers measurable ROI.',
+      'We launch for real adoption, then refine from performance data so results keep improving over time.',
   },
 ]
 
@@ -31,9 +31,9 @@ export default function Process() {
             through a disciplined, three-phase process.
           </p>
           <p className="section-subtitle process-sub-extra">
-            I connect AI tools from platforms like Claude and OpenAI, then tie them
-            into your workflow with APIs, webhooks, and automated notifications so
-            your team gets the right information at the right time.
+            I connect tools like Claude and OpenAI to your workflow with APIs,
+            webhooks, and notifications, so the right information reaches the right
+            person at the right time.
           </p>
         </div>
 

@@ -2,7 +2,7 @@
   {
     title: 'Systems, Not One-Off Builds',
     description:
-      'We do not deliver a standalone automation and walk away. Every engagement produces an integrated system built around how your firm operates.',
+      'We do not hand you a one-off automation and disappear. We build integrated systems that match how your firm actually runs.',
   },
   {
     title: 'ROI-Focused Implementation',
@@ -12,12 +12,12 @@
   {
     title: 'AI Inside a Workflow',
     description:
-      'Isolated AI tools do not move the needle. We integrate AI inside your business processes and your existing tool stack.',
+      'Standalone AI tools rarely change outcomes. We place AI inside your day-to-day workflow and existing stack where it drives results.',
   },
   {
     title: 'Built for Firms That Want an Edge',
     description:
-      'We work with service businesses that treat AI as a strategic advantage and want implementation done seriously.',
+      'We work with service businesses that treat implementation seriously and want a real operational edge.',
   },
 ]
 
@@ -33,8 +33,8 @@ export default function WhyLoonova() {
               and a <span className="gradient-text">complete system</span>
             </h2>
             <p className="section-subtitle">
-              Most AI implementations fail because they are deployed without a surrounding system.
-              We fix that.
+              Most AI rollouts fail because the workflow around them is never designed.
+              We build that missing layer.
             </p>
 
             <div className="why-stats">

@@ -25,14 +25,13 @@
           </h1>
 
           <p className="hero-sub fade-in delay-2">
-            Loonova AI helps service businesses adopt AI through structured systems
-            that improve operations, follow-up, and measurable business performance.
+            We build practical AI systems for service businesses that tighten operations,
+            improve follow-up, and free your team to focus on higher-ROI work AI cannot replace.
           </p>
 
           <p className="hero-supporting fade-in delay-3">
-            AI capabilities are accelerating quickly, and powerful tools are now affordable.
-            The firms that move early with the right system and execution will create
-            the strongest long-term advantage.
+            This is moving fast, and the tools are finally affordable.
+            Firms that implement the right systems now will be hard to catch later.
           </p>
 
           <div className="hero-actions fade-in delay-4">

@@ -27,8 +27,8 @@ export default function ExampleSystems() {
           <span className="section-label label-center">Examples</span>
           <h2 className="section-title">Example Systems</h2>
           <p className="section-subtitle">
-            These examples illustrate how AI, automation, and internal tools can be
-            integrated into practical workflows that improve business efficiency.
+            A few real workflow patterns showing how AI and automation can reduce
+            repetitive work and improve day-to-day execution.
           </p>
         </div>
 

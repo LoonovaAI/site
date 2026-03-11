@@ -2,32 +2,32 @@
   {
     title: 'AI Adoption Strategy',
     description:
-      'We assess your current operations and design a clear AI roadmap - so every investment maps to a specific workflow improvement and business outcome.',
+      'We audit your current workflow and map out where AI will actually pay off, so each investment ties to a clear operational win.',
   },
   {
     title: 'CRM and Follow-Up Systems',
     description:
-      'Intelligent CRM pipelines and automated follow-up sequences that keep your team responsive without manual effort - turning more inquiries into closed business.',
+      'We build CRM pipelines and follow-up sequences that keep response times tight and convert more inquiries into closed deals.',
   },
   {
     title: 'Lead Intake and Qualification',
     description:
-      'Automated intake workflows that capture, screen, and route incoming leads - so your team only spends time on qualified opportunities.',
+      'Inbound leads get captured, screened, and routed automatically, so your team spends time on qualified opportunities instead of admin.',
   },
   {
     title: 'Client Onboarding Automation',
     description:
-      'Replace manual onboarding with structured automated workflows - from contract signing and document collection to welcome sequences and account setup.',
+      'Replace manual onboarding with a clean workflow, from signatures and document collection through welcome emails and account setup.',
   },
   {
     title: 'Internal Operations Automation',
     description:
-      'We map and automate repetitive internal tasks - reporting, scheduling, communications, and approvals - freeing capacity for high-value work.',
+      'We automate repetitive internal work such as reporting, scheduling, updates, and approvals, so your team can stay on high-value work.',
   },
   {
     title: 'Custom AI-Enabled Business Systems',
     description:
-      'End-to-end operational systems designed around your firm\'s workflow - combining AI tools, automation, and integration into one measurable platform.',
+      'When off-the-shelf tools are not enough, we build a custom system around your workflow and connect AI, automation, and integrations into one operating layer.',
   },
 ]
 
@@ -39,8 +39,8 @@ export default function Services() {
           <span className="section-label label-center">What We Build</span>
           <h2 className="section-title">Complete AI Systems, Not One-Off Tools</h2>
           <p className="section-subtitle">
-            Every engagement is designed around your full business workflow - not
-            isolated automations that create new silos.
+            Every engagement is built around your full workflow, not random automations
+            that create new silos.
           </p>
         </div>
 
