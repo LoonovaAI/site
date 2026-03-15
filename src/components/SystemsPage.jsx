@@ -75,6 +75,11 @@ export default function SystemsPage() {
                 These are demo implementations that show how AI, automation, and
                 internal tools fit into real business workflows. In client work, each
                 one is expanded and adapted to match your exact process and software stack.
+                I can also fine-tune models like OpenAI ChatGPT using your company data
+                to improve output quality for your specific workflows. Security is built
+                in with controlled data access, scoped permissions, and safe handling
+                practices. I also set up token usage tracking so usage and cost stay
+                visible and controlled.
               </p>
             </div>
           </div>
