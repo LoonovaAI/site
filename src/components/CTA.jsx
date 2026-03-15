@@ -56,16 +56,13 @@ export default function CTA() {
       <div className="container">
         <div className="cta-inner fade-in">
           <div className="contact-intro">
-            <span className="section-label">Get Started</span>
+            <span className="section-label">Contact</span>
             <h2 className="section-title">
-              Bring AI into your firm with a system
-              that <span className="gradient-text">actually works.</span>
+              Tell me what you want to improve
+              <span className="gradient-text"> in your workflow.</span>
             </h2>
             <p className="section-subtitle">
-              This is moving quickly. The firms putting the right systems in place now
-              are building an edge that gets harder to close later. If you want to see
-              whether your business is a good fit and where your team should reallocate
-              time to higher-ROI work AI cannot replace, let&apos;s talk.
+              Send a quick note about your current process and where things are breaking down. I&apos;ll let you know if I can help.
             </p>
           </div>
 
@@ -115,7 +112,7 @@ export default function CTA() {
                 value={form.message}
                 onChange={onChange}
                 rows="5"
-                placeholder="What are you trying to improve with AI?"
+                placeholder="What process do you want to improve?"
                 required
               />
             </label>

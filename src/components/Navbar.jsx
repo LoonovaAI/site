@@ -86,7 +86,7 @@ export default function Navbar() {
             </ul>
 
             <a href="#contact" onClick={(e) => scrollTo(e, '#contact')} className="navbar-cta">
-              Book a Strategy Call
+              Book a Call
             </a>
 
             <button
@@ -108,7 +108,7 @@ export default function Navbar() {
           <a key={href} href={href} onClick={(e) => scrollTo(e, href)}>{label}</a>
         ))}
         <a href="#contact" onClick={(e) => scrollTo(e, '#contact')} className="btn-primary">
-          Book a Strategy Call
+          Book a Call
         </a>
       </div>
     </>

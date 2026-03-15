@@ -1,21 +1,21 @@
-﻿const STEPS = [
+const STEPS = [
   {
     number: '01',
-    title: 'Assess Bottlenecks',
+    title: 'Find Bottlenecks',
     description:
-      'We start by finding where your team is losing time, dropping responsiveness, or missing visibility before we design anything.',
+      'We identify where time is lost, follow-up slips, or handoffs break.',
   },
   {
     number: '02',
-    title: 'Design the System',
+    title: 'Build the System',
     description:
-      'We design around your full workflow, not isolated tasks. AI, automations, and integrations are mapped to specific business outcomes.',
+      'We build around your full workflow and connect the tools that should work together.',
   },
   {
     number: '03',
-    title: 'Launch and Refine',
+    title: 'Launch and Improve',
     description:
-      'We launch for real adoption, then refine from performance data so results keep improving over time.',
+      'We launch, monitor usage, and refine based on real results.',
   },
 ]
 
@@ -25,15 +25,13 @@ export default function Process() {
       <div className="container">
         <div className="process-header fade-in">
           <span className="section-label label-center">How It Works</span>
-          <h2 className="section-title">A Structured Engagement, Every Time</h2>
+          <h2 className="section-title">Simple, Three-Step Process</h2>
           <p className="section-subtitle">
-            No rushed implementations. No generic playbooks. Every system is built
-            through a disciplined, three-phase process.
+            Find what is broken, build the fix, and improve it after launch.
           </p>
           <p className="section-subtitle process-sub-extra">
-            I connect tools like Claude and OpenAI to your workflow with APIs,
-            webhooks, and notifications, so the right information reaches the right
-            person at the right time.
+            I connect tools like OpenAI and Claude with APIs and webhooks, so updates
+            move to the right person without manual chasing.
           </p>
         </div>
 

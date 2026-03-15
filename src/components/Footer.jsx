@@ -1,18 +1,18 @@
-﻿const YEAR = new Date().getFullYear()
+const YEAR = new Date().getFullYear()
 
 const FOOTER_LINKS = {
   Services: [
-    ['#services', 'AI Adoption Strategy'],
-    ['#services', 'CRM and Follow-Up Systems'],
-    ['#services', 'Lead Intake Workflows'],
+    ['#services', 'AI Strategy'],
+    ['#services', 'CRM and Follow-Up'],
+    ['#services', 'Lead Intake'],
     ['#services', 'Client Onboarding'],
   ],
   Company: [
     ['/systems', 'Systems in Practice'],
     ['#why', 'Why Loonova'],
-    ['#process', 'Our Process'],
+    ['#process', 'Process'],
     ['#industries', 'Industries'],
-    ['#contact', 'Contact Us'],
+    ['#contact', 'Contact'],
   ],
 }
 
@@ -43,8 +43,7 @@ export default function Footer() {
               Loonova <span className="accent">AI</span>
             </p>
             <p>
-              Complete AI systems for service businesses - built for firms that want
-              a real operational edge, not a random collection of AI tools.
+              We build AI systems for service businesses that need cleaner workflows and faster follow-up.
             </p>
             <div className="footer-contact">
               <a href="mailto:info@loonovaai.com" className="footer-contact-link">
@@ -69,7 +68,7 @@ export default function Footer() {
 
         <div className="footer-bottom">
           <span>© {YEAR} Loonova AI. All rights reserved.</span>
-          <span>AI systems for service businesses.</span>
+          <span>Built for service businesses.</span>
         </div>
       </div>
     </footer>

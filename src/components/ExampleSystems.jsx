@@ -1,20 +1,20 @@
 const EXAMPLE_SYSTEMS = [
   {
-    title: 'AI Email Routing',
+    title: 'Email Routing',
     description:
-      'Automatically classifies incoming emails and routes them into structured workflows.',
+      'Incoming emails are labeled and routed to the right workflow.',
     image: '/images/systems/email-routing-workflow.png',
   },
   {
-    title: 'Document Processing',
+    title: 'Document Intake',
     description:
-      'Extracts and organizes information from uploaded documents automatically.',
+      'Key information is pulled from uploaded files and organized for your team.',
     image: '/images/systems/pdf-processing-workflow.png',
   },
   {
-    title: 'Knowledge System',
+    title: 'Knowledge Base Sync',
     description:
-      'Converts email activity into structured knowledge stored in a database.',
+      'Important email context is turned into searchable records.',
     image: '/images/systems/notion-knowledge-system.png',
   },
 ]
@@ -25,10 +25,9 @@ export default function ExampleSystems() {
       <div className="container">
         <div className="example-systems-header fade-in">
           <span className="section-label label-center">Examples</span>
-          <h2 className="section-title">Example Systems</h2>
+          <h2 className="section-title">Systems We Build</h2>
           <p className="section-subtitle">
-            A few real workflow patterns showing how AI and automation can reduce
-            repetitive work and improve day-to-day execution.
+            A few workflow examples from common client use cases.
           </p>
         </div>
 
@@ -39,7 +38,7 @@ export default function ExampleSystems() {
               <div className="example-system-body">
                 <h3>{system.title}</h3>
                 <p>{system.description}</p>
-                <a href="/systems" className="btn-secondary">View System</a>
+                <a href="/systems" className="btn-secondary">View Example</a>
               </div>
             </article>
           ))}

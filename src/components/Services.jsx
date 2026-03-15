@@ -2,32 +2,32 @@
   {
     title: 'AI Adoption Strategy',
     description:
-      'We audit your current workflow and map out where AI will actually pay off, so each investment ties to a clear operational win.',
+      'We review your workflow and identify where AI can save time or improve follow-up before you spend on tools.',
   },
   {
     title: 'CRM and Follow-Up Systems',
     description:
-      'We build CRM pipelines and follow-up sequences that keep response times tight and convert more inquiries into closed deals.',
+      'We set up CRM pipelines and follow-up flows so leads do not get missed.',
   },
   {
     title: 'Lead Intake and Qualification',
     description:
-      'Inbound leads get captured, screened, and routed automatically, so your team spends time on qualified opportunities instead of admin.',
+      'New leads are captured, filtered, and routed automatically so your team can focus on qualified work.',
   },
   {
     title: 'Client Onboarding Automation',
     description:
-      'Replace manual onboarding with a clean workflow, from signatures and document collection through welcome emails and account setup.',
+      'We replace manual onboarding with a step-by-step flow for signatures, documents, and client setup.',
   },
   {
     title: 'Internal Operations Automation',
     description:
-      'We automate repetitive internal work such as reporting, scheduling, updates, and approvals, so your team can stay on high-value work.',
+      'We automate repetitive tasks like reporting, scheduling, updates, and approvals.',
   },
   {
     title: 'Custom AI-Enabled Business Systems',
     description:
-      'When off-the-shelf tools are not enough, we build a custom system around your workflow and connect AI, automation, and integrations into one operating layer.',
+      'When off-the-shelf tools are not enough, we build a custom system around your exact process.',
   },
 ]
 
@@ -37,10 +37,9 @@ export default function Services() {
       <div className="container">
         <div className="services-header fade-in">
           <span className="section-label label-center">What We Build</span>
-          <h2 className="section-title">Complete AI Systems, Not One-Off Tools</h2>
+          <h2 className="section-title">Practical Systems for Daily Work</h2>
           <p className="section-subtitle">
-            Every engagement is built around your full workflow, not random automations
-            that create new silos.
+            Each project is built around your full workflow, not disconnected automations.
           </p>
         </div>
 

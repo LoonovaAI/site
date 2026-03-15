@@ -1,23 +1,23 @@
-﻿const FEATURES = [
+const FEATURES = [
   {
-    title: 'Systems, Not One-Off Builds',
+    title: 'Built Around Your Workflow',
     description:
-      'We do not hand you a one-off automation and disappear. We build integrated systems that match how your firm actually runs.',
+      'We map how your team already works, then build around that.',
   },
   {
-    title: 'ROI-Focused Implementation',
+    title: 'Clear Business Targets',
     description:
-      'Every system is tied to a measurable outcome - faster response times, higher conversion rates, reduced overhead, or improved client retention.',
+      'Each system is tied to specific targets like response time, conversion, or fewer manual handoffs.',
   },
   {
-    title: 'AI Inside a Workflow',
+    title: 'Tools That Work Together',
     description:
-      'Standalone AI tools rarely change outcomes. We place AI inside your day-to-day workflow and existing stack where it drives results.',
+      'AI, automations, and your existing software are connected into one process.',
   },
   {
-    title: 'Built for Firms That Want an Edge',
+    title: 'Hands-On Implementation',
     description:
-      'We work with service businesses that treat implementation seriously and want a real operational edge.',
+      'You work directly with me from planning through rollout.',
   },
 ]
 
@@ -29,26 +29,25 @@ export default function WhyLoonova() {
           <div className="why-left fade-in">
             <span className="section-label">Why Loonova</span>
             <h2 className="section-title">
-              The difference between a tool
-              and a <span className="gradient-text">complete system</span>
+              Why clients choose
+              <span className="gradient-text"> Loonova</span>
             </h2>
             <p className="section-subtitle">
-              Most AI rollouts fail because the workflow around them is never designed.
-              We build that missing layer.
+              Most teams do not need more software. They need a better operating process.
             </p>
 
             <div className="why-stats">
               <div className="stat-block">
                 <strong>100%</strong>
-                <span>System-level engagements</span>
+                <span>Service business focus</span>
               </div>
               <div className="stat-block">
                 <strong>3x</strong>
-                <span>Average efficiency improvement</span>
+                <span>Efficiency target</span>
               </div>
               <div className="stat-block">
                 <strong>ROI</strong>
-                <span>Tied to every deployment</span>
+                <span>Measured on projects</span>
               </div>
             </div>
           </div>
