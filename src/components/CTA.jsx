@@ -64,6 +64,9 @@ export default function CTA() {
             <p className="section-subtitle">
               Send a quick note about your current process and where things are breaking down. I&apos;ll let you know if I can help.
             </p>
+            <p className="section-subtitle">
+              If you prefer a lighter engagement, I can design your system plan or spend a couple of hours helping you set up and configure AI tools on your local device.
+            </p>
           </div>
 
           <form className="contact-form" onSubmit={onSubmit} noValidate>

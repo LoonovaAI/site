@@ -5,6 +5,11 @@
       'We review your workflow and identify where AI can save time or improve follow-up before you spend on tools.',
   },
   {
+    title: 'Hands-On AI Tool Setup',
+    description:
+      'Need quick help instead of a full build? We can design your system plan or spend a couple of hours setting up and configuring AI tools on your local device.',
+  },
+  {
     title: 'CRM and Follow-Up Systems',
     description:
       'We set up CRM pipelines and follow-up flows so leads do not get missed.',
