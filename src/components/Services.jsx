@@ -25,11 +25,6 @@
       'We replace manual onboarding with a step-by-step flow for signatures, documents, and client setup.',
   },
   {
-    title: 'Internal Operations Automation',
-    description:
-      'We automate repetitive tasks like reporting, scheduling, updates, and approvals.',
-  },
-  {
     title: 'Custom AI-Enabled Business Systems',
     description:
       'When off-the-shelf tools are not enough, we build a custom system around your exact process.',
